@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODY CARE</title>
+    <link rel="stylesheet" href="bodycare.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+     <!-- navbar -->
+     <body>
+        <div id="navbar">
+            <div id="pickup">
+            <div class="gps"><h3> <img src="data:image/png;base64,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" alt="">
+                &nbsp;&nbsp;&nbsp;PICK UP IN STORE&nbsp;&nbsp; <a href="">  set store</a> &nbsp;&nbsp;</h3>
+            </div>
+            </div>
+           <div style="display: flex;align-items: center;justify-content: center;">
+            <div id="head">
+                <a href="index.html"><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwf1f0e62b/images/svg-icons/Logos-main.svg?yocs=o_s_" alt=""></a>
+              
+            </div>
+           <div class="lefthead" >
+               <!-- create account -->
+            <input style="height: 30px; width: 300px; " type="text" placeholder="Search by fregnese or product">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <!-- bag -->
+            <a href="create.html"> <img style="width: 30px; " src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+           <a href=""> <img style="width: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEX9NQ3XRVwjFk_biFOoYXVhWny31b_hnS6Q&usqp=CAU" alt="">&nbsp;&nbsp;&nbsp;</a>
+           </div>
+           </div>
+           <div class="links">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="new_and_now.html">NEW & NOW</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="bodycare.html">BODY CARE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">HAND SOAPS & SANITIZERS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Home-Fragrance.html">HOME FRAGRANCE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gift.html">GIFTS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <a href="index.html">TOP OFFERS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </div>
+        </div>
+    </body>
+    <!-- -------------------- -->
+    <div id="container">
+        <div class="right">
+            <div id="p1">
+                <h3>TOP OFFERS</h3>
+                <p>$5.95 All Body Lotion & Body Cream</p>
+                <p>Buy 3, Get 1 Free Select Full-Size Body Care</p>
+                <p>Buy 2, Get 1 Free Travel, Hand & Lip Care</p>
+            </div>
+            <div>
+                <h3>FEATURED</h3>
+                <p>New Body Care</p>
+                <p>Retired Frangrances</p>
+                <p>Travel Size</p>
+            </div>
+            <div>
+                <h3>BATH & SHOWER</h3>
+                <p>All Bath & Shower</p>
+                <p>Bubble Bath</p>
+                <p>Bar Saop</p>
+                <p>Bath Accessories</p>
+            </div>
+            <div>
+                <h3>MOISTURIZERS</h3>
+                <p>All Moisturizers</p>
+                <p>Body Lotion</p>
+                <p>Body Cream</p>
+                <p>Hand Cream</p>
+                <p>Lip Gloss & Balms</p>
+
+            </div>
+            <div>
+                <h3>FRANGRANCE</h3>
+                <p>ALL Fragrance</p>
+                <p>Body Sprays & Mists</p>
+                <p>Perfume 7 Cologne</p>
+
+            </div>
+            <div>
+                <h3>AROMATHERAPY</h3>
+                <p>All Aromatherapy</p>
+                <p>Body Wash & Shower Gel</p>
+                <p>Moisturizers</p>
+            </div>
+            <div>
+                <h3>MEN'S</h3>
+                <p>All Men's</p>
+                <p>Body Wah & Shower Gel</p>
+                <p>Moisturizers</p>
+                <p>Body Spray & Cologne</p>
+            </div>
+            <div>
+                <h3>GIFT SETS</h3>
+                <p>Body Care & Gift Sets</p>
+            </div>
+        </div>
+   
+        <div class="left">
+            <div class="leftup">
+                <h1>All Body Care</h1>
+                <hr size="1" width="100%" color="black">
+                <img id="img1"
+                    src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_"
+                    alt="none" />
+                <button>ALL BODY CARE</button>
+                <button>FRANGRANCES</button>
+                <button>BATH & SHOWER</button>
+                <button>MOISTURIZERS</button>
+                <button>AROMATHERAPY</button>
+                <button id="btn">MEN'S</button>
+            </div>
+            <div id="buttom">
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf97a6473/crop/026414639_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page"><img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button></div>
+                <div id="page"><img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwff743235/crop/026438530_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button></div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwba77ffbc/crop/026267868_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw65573859/crop/026451884_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw81522767/crop/026401914_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw405fd62d/crop/026401906_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw50a09db0/crop/026395407_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd097b2cd/crop/026451889_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd097b2cd/crop/026451889_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc02b92b6/crop/026381189_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7c6a3bb3/crop/026400330_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc189b575/crop/026240389_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8a157107/crop/026353232_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwae11afdf/crop/026438528_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwae11afdf/crop/026438528_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwddbaf67c/crop/026311427_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3e419c30/crop/026438526_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3e419c30/crop/026438526_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf97a6473/crop/026414639_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw744d9e74/crop/026414637_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw744d9e74/crop/026414637_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw77031493/crop/026400299_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb37ec169/crop/026403500_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw03a2e5ae/crop/026451890_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw03a2e5ae/crop/026451890_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe8bc2c4c/crop/026401902_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw06129964/crop/026451891_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw489f00f7/crop/026395413_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa79df475/crop/026401903_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9d94498d/crop/026451883_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0b5bbf2c/crop/026398798_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7a9cd531/crop/026438524_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s__" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7a9cd531/crop/026438524_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw170d959f/crop/026413789_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2928b4c4/crop/026451871_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4b4aaf7f/crop/026451872_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8de49218/hires/026414645.jpg?sh=471&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw234a33a8/crop/026401915_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8b383976/crop/026413955_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe5099953/crop/026414635_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc8cd187a/hires/026401918.jpg?sh=471&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5ed672f7/crop/026439892_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwca841550/hires/026438538_alt_1.jpg?sh=413&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw26f54fa4/crop/026401910_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5690febd/crop/026401911_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw559bb7e6/crop/026438532_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+                <div id="page">
+                    <img id="img2" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3fc3591d/crop/026438534_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="none">
+                    <h4>New Fragrance</h4>
+                    <h5>Butterfly</h5>
+                    <p id="pp1">Fine Fragrance Mist</p>
+                    <h3>$ 17.50</h3>
+                    <p id="pp2">Mix & Max: Buy 3, Get 1 free</p>
+                    <button id="btn1">ADD TO BAG</button>
+                </div>
+    
+            </div>
+    
+        </div>
+
+        </div>
+       
+    </div>
+    </div>
+    <hr size="1" width="100%" color="black">
+    <div id="lastbox">
+        <div id="left"> 
+            <p style="margin-bottom: 20px;">Get email offers & the latest news from Bath & Body Works!</p>
+            <p class="enter">
+                Enter Email
+                <p style="display: flex; margin-top: -15px;"><input style="height: 18px;" type="text"  class="first"><img style="height: 20px; width: 22px; " class="icon"
+                    src="https://cdn.pixabay.com/photo/2016/03/31/19/13/information-1294813_960_720.png" alt=""></p>
+            <p>
+                Confirm Email
+            </p>
+            <p style="margin-top: -15px;"><input style="height: 18px; margin-top: -15px;" type="text" name="" class="first"><button style="height: 25px; background-color: black; color: white; " class="btn">Submit</button></p>
+            </p>
+            <p>Get Connected</p>
+            <div id="fotterimg">
+                <div> <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png" alt=""></div>
+                <div><img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_960_720.png" alt=""></div>
+                <div><img src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_960_720.png" alt=""></div>
+                <div><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338432_960_720.png" alt=""></div>
+                <div><img src="https://cdn.pixabay.com/photo/2017/06/23/02/35/youtube-2433301_960_720.png" alt=""></div>
+                <div><img src="https://cdn.pixabay.com/photo/2013/04/01/21/31/parking-99212_960_720.png" alt=""></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rightboxes">
+                <h3>CUSTOMER CARE</h1>
+                <p><a href="">Help & FAQs</a></p>
+                <p><a href="">Shipping</a></p>
+                <p><a href="">Returns & Exchanges</a></p>
+                <p><a href="">Order Tracking</a></p>
+                <p><a href="">Corporate Sales & Gifts</a></p>
+                <p><a href="">Contact Us</a></p>
+            </div>
+            <div id="rightboxes">
+                <h3>MY ACCOUNT</h1>
+                    <p><a href="">Sign In or Sign Up</a></p>
+                    <p><a href="">Order Tracking</a></p>
+                    <p><a href="">My Auto Refresh</a></p>
+                    <p><a href="">My Love-It List</a></p>
+            </div>
+            <div id="rightboxes">
+                <h3> DISCOVER</h1>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Gift Cards</a></p>
+                    <p><a href="">Shop by Fragrance</a></p>
+                    <p><a href="">Product Ingredients</a></p>
+                    <p><a href="">Get Inspired</a></p>
+                    <p><a href="">Diversity, Equity & Inclusion</a></p>
+            </div>
+            <div id="rightboxes">
+                <h3>FIND US</h1>
+                    <p><a href="">Store Locator</a></p>
+                    <p><a href="">Global Locations</a></p>
+            </div> 
+        </div>   
+    </div>
+    <div style="width: 100%;height: auto;">
+    <img style="margin-left: 55%;width: 40%;
+    height: 100px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_" alt="">
+    </div>
+    <div style="width: 100%; height: auto; background: rgb(236, 235, 235);">
+        <p>Terms Of Use &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;Privacy Policy &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Security Bug Report&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; California Privacy Rights&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  Do Not Sell My Personal Information (California) Transparency in Supply Chains&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  Ad Preferences</p>
+        <p style="text-align: center;">© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+    </div> 
+
+
+</body>
+
+</html>
